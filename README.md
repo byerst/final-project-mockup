@@ -1,6 +1,6 @@
 # final-project-mockup
 
-<img src="screenshots/1.png">
-<img src="screenshots/2.png">
-<img src="screenshots/3.png">
-<img src="screenshots/4.png">
+<img src="doc/1.png">
+<img src="doc/2.png">
+<img src="doc/3.png">
+<img src="doc/4.png">
