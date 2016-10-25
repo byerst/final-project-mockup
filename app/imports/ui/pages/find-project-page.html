@@ -1,0 +1,29 @@
+<template name="Find_Project_Page">
+  <div class="ui container">
+    <form style="margin-top: 20px;" class="ui form find-project-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Find Project</h4>
+      <div class="field">
+        <label>Keywords</label>
+
+        <div class="field">
+          <input type="text" name="keywords" id="keywords" placeholder="Keywords">
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Contact Info</label>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="contactName" id="contactName" placeholder="Name of Contact">
+          </div>
+          <div class="field">
+            <input type="text" name="email" id="email" placeholder="Email">
+          </div>
+        </div>
+      </div>
+
+      <button class="ui button" type="submit">Submit</button>
+
+    </form>
+  </div>
+</template>

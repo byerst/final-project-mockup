@@ -1,0 +1,66 @@
+<!--
+<template name="Home_Page">
+  <div class="ui container">
+
+    {{#if Template.subscriptionsReady}}
+    <table style="margin-top: 20px" class="ui celled table">
+      <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>Description</th>
+        <th>Contact Name</th>
+        <th>Email</th>
+        <th>Edit</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each project in projectList}}
+      <tr>
+        <td>{{project.projectName}}</td>
+        <td>{{project.description}}</td>
+        <td>{{project.contactName}}</td>
+        <td>{{project.email}}</td>
+        <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit</a></td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+  </div>
+</template>
+-->
+<template name="Home_Page">
+  <div class="ui container">
+
+    {{#if Template.subscriptionsReady}}
+
+    <div style="padding:10px;" class="ui cards">
+      {{#each project in projectList}}
+      <div style="" class="ui fluid card">
+        <div class="content">
+          <div class="header">{{project.projectName}}</div>
+          <div class="description">
+            {{project.description}}
+          </div>
+          <div class="extra content">
+            <p>{{project.contactName}}</p>
+            <p>{{project.email}}</p>
+          </div>
+        </div>
+        <a href="{{pathFor 'Project_Page' _id=project._id}}">
+          <div class="ui bottom attached button">
+            <i class="add icon"></i>
+            More Info
+          </div>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+  </div>
+</template>
