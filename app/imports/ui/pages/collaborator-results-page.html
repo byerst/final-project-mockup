@@ -1,0 +1,60 @@
+<template name="Collaborator_Results_Page">
+  <div class="ui container">
+
+    {{#if Template.subscriptionsReady}}
+
+    <div style="padding:10px;" class="ui cards">
+      {{#each project in projectList}}
+      <div class="card">
+        <div class="image">
+          <img src="http://www.hawaii.edu/fas/Manoa%20seal.JPG">
+        </div>
+        <div class="content">
+          <div class="header">{{project.projectName}}</div>
+          <div class="meta">
+            <a>App Development</a>
+          </div>
+          <div class="description">
+            Tim has skills in software engineering, javascript, and semantic UI.
+          </div>
+        </div>
+        <div class="extra content">
+      <span class="right floated">
+        Joined in 2016
+      </span>
+          <span>
+        <i class="check square icon"></i>
+        Member of 0 Alloy Projects
+      </span>
+        </div>
+        <div class="ui alloy-green bottom attached button">
+          <i class="add icon"></i>
+          More Info
+        </div>
+      </div>
+
+      <!--      <div style="" class="ui card">
+              <div class="content">
+                <div class="header">{{project.projectName}}</div>
+                <div class="description">
+                  {{project.description}}
+                </div>
+                <div class="extra content">
+                  <p>{{project.contactName}}</p>
+                  <p>{{project.email}}</p>
+                </div>
+              </div>
+              <a href="{{pathFor 'Project_Page' _id=project._id}}">
+                <div class="ui alloy-green bottom attached button">
+                  <i class="add icon"></i>
+                  More Info
+                </div>
+              </a>
+            </div> -->
+      {{/each}}
+    </div>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+  </div>
+</template>

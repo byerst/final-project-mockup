@@ -63,3 +63,10 @@ Template.Post_Project_Page.events({
   },
 });
 
+Template.Post_Project_Page.onRendered(function () {
+  this.$('.dropdown').dropdown({
+    allowAdditions: true,
+  });
+
+});
+

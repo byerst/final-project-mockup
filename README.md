@@ -1,6 +1,16 @@
 # final-project-mockup
+<h1>Login Page</h1>
+<img src="doc/login_page.png">
+<h1>Dashboard</h1>
+<img src="doc/dashboard.png">
+<h1>Find Collaborators</h1>
+<img src="doc/find_collaborators.png">
+<h1>Find Projects</h1>
+<img src="doc/find_project.png">
+<h1>Post Project</h1>
+<img src="doc/post_project.png">
+<h1>List Collaborators</h1>
+<img src="doc/list_collaborators.png">
+<h1>Collaborator Page</h1>
+<img src="doc/collaborator.png">
 
-<img src="doc/1.png">
-<img src="doc/2.png">
-<img src="doc/3.png">
-<img src="doc/4.png">

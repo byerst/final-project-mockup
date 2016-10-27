@@ -1,32 +1,9 @@
-<template name="Post_Project_Page">
+<template name="Find_Collaborator_Page">
   <div class="ui container">
-    <form style="margin-top: 20px;" class="ui form project-data-form {{ errorClass }}">
-      <h4 class="ui dividing header">Post Project</h4>
+    <form style="margin-top: 20px;" class="ui form find-collaborator-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Find Collaborator</h4>
       <div class="field">
-        <label>Project Name</label>
-
-        <div class="field">
-          <input type="text" name="projectName" id="projectName" placeholder="Project Name">
-          {{#if displayFieldError 'projectName' }}
-          <div class="ui error message">
-            <p>You must specify your project's name.</p>
-          </div>
-          {{/if}}
-        </div>
-
-        <div class="field">
-          <label>Description</label>
-          <input type="text" name="description" id="description" placeholder="Description">
-        </div>
-        {{#if displayFieldError 'description' }}
-        <div class="ui error message">
-          <p>You must specify your description.</p>
-        </div>
-        {{/if}}
-      </div>
-
-      <div class="field">
-        <label>Skills Needed</label>
+        <label>Skills</label>
 
         <select multiple="" name="skills" class="ui fluid normal dropdown">
           <option value="angular">Angular</option>
@@ -51,24 +28,15 @@
 
       </div>
 
+
       <div class="field">
         <label>Contact Info</label>
         <div class="two fields">
           <div class="field">
             <input type="text" name="contactName" id="contactName" placeholder="Name of Contact">
-            {{#if displayFieldError 'contactName' }}
-            <div class="ui error message">
-              <p>You must specify your contact's name.</p>
-            </div>
-            {{/if}}
           </div>
           <div class="field">
             <input type="text" name="email" id="email" placeholder="Email">
-            {{#if displayFieldError 'email' }}
-            <div class="ui error message">
-              <p>You must specify your email.</p>
-            </div>
-            {{/if}}
           </div>
         </div>
       </div>
