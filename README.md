@@ -12,5 +12,5 @@
 <h1>List Collaborators</h1>
 <img src="doc/list_collaborators.png">
 <h1>Collaborator Page</h1>
-<img src="doc/collaborator.png">
+<img src="doc/collaborator_page.png">
 
