@@ -4,7 +4,7 @@
 <h1>Dashboard</h1>
 <img src="doc/dashboard.png">
 <h1>Find Collaborators</h1>
-<img src="doc/find_collaborators.png">
+<img src="doc/find_collaborator.png">
 <h1>Find Projects</h1>
 <img src="doc/find_project.png">
 <h1>Post Project</h1>
